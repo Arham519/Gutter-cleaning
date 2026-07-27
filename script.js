@@ -16,7 +16,28 @@ document.addEventListener('DOMContentLoaded', () => {
   initActiveMenuScroll();
   initButtonRipple();
   initCard3DParallax();
+  initInteractiveUSPs();
 });
+
+/* ==========================================================================
+   Throttled Central Scroll Manager for Mobile Performance
+   ========================================================================== */
+let scrollTicking = false;
+const scrollCallbacks = [];
+
+function registerScrollCallback(cb) {
+  scrollCallbacks.push(cb);
+}
+
+window.addEventListener('scroll', () => {
+  if (!scrollTicking) {
+    window.requestAnimationFrame(() => {
+      scrollCallbacks.forEach(cb => cb());
+      scrollTicking = false;
+    });
+    scrollTicking = true;
+  }
+}, { passive: true });
 
 /* ==========================================================================
    1. Sticky Header
@@ -25,7 +46,7 @@ function initStickyHeader() {
   const header = document.querySelector('.main-header');
   if (!header) return;
 
-  const handleScroll = () => {
+  const update = () => {
     if (window.scrollY > 40) {
       header.classList.add('scrolled');
     } else {
@@ -33,8 +54,8 @@ function initStickyHeader() {
     }
   };
 
-  window.addEventListener('scroll', handleScroll, { passive: true });
-  handleScroll();
+  registerScrollCallback(update);
+  update();
 }
 
 /* ==========================================================================
@@ -44,6 +65,7 @@ function initMobileMenu() {
   const toggleBtn = document.getElementById('mobileNavToggle');
   const navMenu = document.getElementById('navMenu');
   const navLinks = document.querySelectorAll('.nav-link');
+  const subLinks = document.querySelectorAll('.nav-dropdown-menu a');
   
   if (!toggleBtn || !navMenu) return;
 
@@ -62,6 +84,27 @@ function initMobileMenu() {
   toggleBtn.addEventListener('click', toggleMenu);
 
   navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const parentWrapper = link.closest('.nav-dropdown-wrapper');
+      if (parentWrapper && window.innerWidth <= 991) {
+        // Toggle mobile dropdown
+        e.preventDefault();
+        parentWrapper.classList.toggle('active');
+        const arrow = parentWrapper.querySelector('.nav-dropdown-arrow');
+        if (arrow) {
+          arrow.style.transform = parentWrapper.classList.contains('active') ? 'rotate(180deg)' : '';
+        }
+      } else {
+        // Close menu for regular link clicks on mobile
+        if (navMenu.classList.contains('active')) {
+          toggleMenu();
+        }
+      }
+    });
+  });
+
+  // Ensure sublinks close the menu when clicked
+  subLinks.forEach(link => {
     link.addEventListener('click', () => {
       if (navMenu.classList.contains('active')) {
         toggleMenu();
@@ -77,7 +120,7 @@ function initScrollProgress() {
   const progressBar = document.getElementById('scrollProgress');
   if (!progressBar) return;
 
-  window.addEventListener('scroll', () => {
+  const update = () => {
     const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrollPosition = window.scrollY;
     
@@ -87,7 +130,10 @@ function initScrollProgress() {
     } else {
       progressBar.style.width = '0%';
     }
-  }, { passive: true });
+  };
+
+  registerScrollCallback(update);
+  update();
 }
 
 /* ==========================================================================
@@ -97,13 +143,16 @@ function initBackToTop() {
   const backToTopBtn = document.getElementById('backToTop');
   if (!backToTopBtn) return;
 
-  window.addEventListener('scroll', () => {
+  const update = () => {
     if (window.scrollY > 400) {
       backToTopBtn.classList.add('show');
     } else {
       backToTopBtn.classList.remove('show');
     }
-  }, { passive: true });
+  };
+
+  registerScrollCallback(update);
+  update();
 
   backToTopBtn.addEventListener('click', () => {
     window.scrollTo({
@@ -452,3 +501,41 @@ function initCard3DParallax() {
     });
   });
 }
+
+/* ==========================================================================
+   15. Interactive USP Cards (Click-to-Expand Florida Gutter Tips)
+   ========================================================================== */
+function initInteractiveUSPs() {
+  const cards = document.querySelectorAll('.usp-highlight-item');
+  if (cards.length === 0) return;
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const isActive = card.classList.contains('active');
+      
+      // Collapse all other active cards
+      cards.forEach(c => {
+        if (c !== card && c.classList.contains('active')) {
+          c.classList.remove('active');
+          c.setAttribute('aria-expanded', 'false');
+          const indicator = c.querySelector('.usp-action-indicator span');
+          if (indicator) indicator.textContent = 'See Florida Gutter Tip';
+        }
+      });
+
+      // Toggle current card
+      if (isActive) {
+        card.classList.remove('active');
+        card.setAttribute('aria-expanded', 'false');
+        const indicator = card.querySelector('.usp-action-indicator span');
+        if (indicator) indicator.textContent = 'See Florida Gutter Tip';
+      } else {
+        card.classList.add('active');
+        card.setAttribute('aria-expanded', 'true');
+        const indicator = card.querySelector('.usp-action-indicator span');
+        if (indicator) indicator.textContent = 'Hide Gutter Tip';
+      }
+    });
+  });
+}
+

@@ -43,9 +43,25 @@
 
     <!-- Header / Navigation -->
     <header class="main-header" id="mainHeader">
+        <div class="header-info-bar">
+            <div class="container info-bar-container">
+                <div class="info-item phone-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <span>Call Us: <a href="tel:(480)-856-4639">(480)-856-4639</a></span>
+                </div>
+                <div class="info-item email-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <span>Email: <a href="mailto:info@palmcoastguttercleaning.com">info@palmcoastguttercleaning.com</a></span>
+                </div>
+                <div class="info-item hours-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    <span>Hours: Mon - Sat 8am - 6pm</span>
+                </div>
+            </div>
+        </div>
         <div class="container nav-bar">
             <a href="#" class="logo" aria-label="Gutter Cleaning Home">
-                <img src="images/logo.png" alt="Gutter Cleaning Logo" class="logo-img">
+                <img src="images/logo.png" alt="Gutter Cleaning Logo" class="logo-img" decoding="async">
             </a>
             
             <button class="hamburger-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
@@ -59,37 +75,68 @@
                     <li><a href="index.html" class="nav-link active">Home</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
                     <li class="nav-dropdown-wrapper">
-                        <a href="#services" class="nav-link">Services <span class="nav-dropdown-arrow">▼</span></a>
+                        <a href="#" class="nav-link">Services <span class="nav-dropdown-arrow">▼</span></a>
                         <ul class="nav-dropdown-menu">
                             <li><a href="gutter-guard-installation.html">Gutter Guard Installation</a></li>
                         </ul>
                     </li>
-                    
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
-
-    <main>
+    </header>    <main>
         <!-- 1. Hero Section -->
         <section class="hero" id="home">
-            <div class="hero-overlay"></div>
+            <!-- Background Shapes & Patterns -->
+            <div class="hero-bg-shapes">
+                <div class="hero-shape hero-shape-1"></div>
+                <div class="hero-shape hero-shape-2"></div>
+                <div class="hero-shape hero-shape-3"></div>
+                <div class="hero-bg-pattern"></div>
+                <div class="hero-bg-wave"></div>
+            </div>
             
             <div class="container hero-container">
                 <div class="hero-layout-premium">
-                    <div class="hero-glass-panel reveal-el fade-up">
-                        <!-- <span class="hero-premium-badge">Premium Home Care</span> -->
-                        <h1 class="hero-title-premium">Gutter Cleaning <br><span>Palm Coast</span></h1>
-                        
-                        <div class="hero-content-text">
-                            <p class="hero-p-main">
-                                When gutters fill with leaves, pine needles, and other debris, rainwater cannot flow the way it should. During Florida's heavy rain, that can lead to overflowing gutters and downspouts and water collecting around your home.
-                            </p>
-                            <p class="hero-p-highlight">
-                                Our gutter cleaning service in Palm Coast removes built up debris, clears blockages, and flushes the drainage system to help keep rainwater flowing away from your home. We also complete the cleanup before we leave, so your property is ready for the next storm.
-                            </p>
+                    <!-- Left Column: Content (45%) -->
+                    <div class="hero-premium-content">
+                        <!-- Trust Badge -->
+                        <div class="hero-trust-badge">
+                            <span class="badge-text">Schedule Your Free Inspection</span>
                         </div>
+                        
+                        <!-- Headline -->
+                        <h1 class="hero-title-premium">
+                            Gutter Cleaning <br><span>Palm Coast</span>
+                        </h1>
+                        
+                        <!-- Supporting Paragraphs -->
+                        <p class="hero-p-main" style="margin-bottom: 1rem;">
+                            Rain, leaves, seed pods, and roof debris can block gutters and stop water from draining properly. Gutter Cleaning Palm Coast helps homeowners keep rainwater moving away from the foundation, driveway, and landscaped areas before heavy weather creates bigger drainage problems.
+                        </p>
+                        <p class="hero-p-main">
+                            Our gutter cleaning service removes built up debris, clears visible blockages, and checks the roof drainage system before the work is complete. Regular maintenance helps support proper water flow throughout the year and prepares your home for Florida's changing weather.
+                        </p>
+                        
+
+                    </div>
+                    
+                    <!-- Signature S-Shaped Divider Centerpiece -->
+                    <div class="hero-s-divider-container">
+                        <svg class="hero-s-divider" viewBox="0 0 200 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                            <!-- Single clean S-shaped accent line in brand primary color -->
+                            <path d="M 100,0 C 220,200 -20,600 100,800" stroke="var(--primary)" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.3" />
+                        </svg>
+                    </div>
+
+                    <!-- Right Column: Visuals & Floating Cards (55%) -->
+                    <div class="hero-premium-image-wrapper">
+                        <!-- Premium Image Container -->
+                        <div class="hero-image-container">
+                            <img src="images/premium_gutter_technician.png" alt="Professional gutter cleaning technician cleaning gutters safely on a beautiful home in Palm Coast FL" class="hero-img-main" decoding="async">
+                            <div class="hero-img-glass-border"></div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -98,8 +145,9 @@
         <!-- 2. Trust Section (USP Banner Bar) -->
         <section class="trust">
             <div class="container">
-                <div class="usp-highlights-grid reveal-el fade-up">
-                    <div class="usp-highlight-item">
+                <div class="usp-highlights-grid reveal-el fade-up" style="margin-top: 0;">
+                    <!-- Card 1: Heavy Rain -->
+                    <div class="usp-highlight-item" role="button" tabindex="0" aria-expanded="false">
                         <div class="usp-bar-icon-wrapper">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="usp-bar-svg">
                                 <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/>
@@ -108,36 +156,73 @@
                                 <path d="M12 16v6"/>
                             </svg>
                         </div>
-                        <h3>Florida Rain Can Turn Small Gutter Clogs Into Bigger Problems</h3>
+                        <h3>Heavy Rain Can Expose Small Drainage Problems</h3>
+                        <p class="usp-desc">Even a minor blockage can cause water to overflow during periods of heavy rainfall, especially when debris collects along the roofline.</p>
+                        
+                        <div class="usp-expandable-tip">
+                            <span class="tip-badge">Storm Tip</span>
+                            <div class="tip-content">
+                                Palm Coast storms run June through November. Clearing debris before June ensures your downspouts don't overflow during sudden heavy downpours.
+                            </div>
+                        </div>
+                        
+                        <div class="usp-action-indicator">
+                            <span>See Florida Gutter Tip</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
                     </div>
 
-                    <div class="usp-highlight-item">
+                    <!-- Card 2: Seasonal Debris -->
+                    <div class="usp-highlight-item" role="button" tabindex="0" aria-expanded="false">
                         <div class="usp-bar-icon-wrapper">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="usp-bar-svg">
                                 <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
                                 <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
                             </svg>
                         </div>
-                        <h3>Pine Needles and Oak Leaves Build Up Throughout the Year</h3>
+                        <h3>Seasonal Debris Collects Over Time</h3>
+                        <p class="usp-desc">Leaves, seed pods, small branches, and roof grit can build up after windy weather and reduce the amount of water that moves through the system.</p>
+                        
+                        <div class="usp-expandable-tip">
+                            <span class="tip-badge">Tree Guide</span>
+                            <div class="tip-content">
+                                Live oaks shed heavily in spring, while slash pines drop needles all year. Check gutters near heavy tree canopies at least three times annually.
+                            </div>
+                        </div>
+                        
+                        <div class="usp-action-indicator">
+                            <span>See Florida Gutter Tip</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
                     </div>
 
-                    <div class="usp-highlight-item">
+                    <!-- Card 3: Routine Maintenance -->
+                    <div class="usp-highlight-item" role="button" tabindex="0" aria-expanded="false">
                         <div class="usp-bar-icon-wrapper">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="usp-bar-svg">
                                 <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/>
                             </svg>
                         </div>
-                        <h3>Overflow Usually Starts With a Small Blockage</h3>
-                    </div>
-
-                    <div class="usp-highlight-item">
-                        <div class="usp-bar-icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="usp-bar-svg">
-                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                                <polyline points="9 22 9 12 15 12 15 22"/>
+                        <h3>Routine Maintenance Helps Reduce Future Problems</h3>
+                        <p class="usp-desc">A clear drainage path allows rainwater to move away from your home and supports better protection for the areas around your property.</p>
+                        
+                        <div class="usp-expandable-tip">
+                            <span class="tip-badge">Foundation Care</span>
+                            <div class="tip-content">
+                                Regular cleaning prevents rainwater pooling near slabs, avoiding soil erosion, foundation shifting, and moisture damage behind your siding.
+                            </div>
+                        </div>
+                        
+                        <div class="usp-action-indicator">
+                            <span>See Florida Gutter Tip</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
                             </svg>
                         </div>
-                        <h3>Keeping Rainwater Moving Helps Protect Your Home</h3>
                     </div>
                 </div>
             </div>
@@ -148,34 +233,39 @@
             <div class="container">
                 <div class="about-split-layout">
                     <div class="about-text-side reveal-el fade-right">
-                        <!-- <span class="section-badge">About Us</span> -->
                         <h2 class="section-title">Gutter Cleaning <br><span>Palm Coast, FL</span></h2>
                         <div class="about-paragraphs">
                             <p class="about-p">
-                                Homes around European Village and Washington Oaks Gardens State Park deal with heavy rain, pine needles, leaves, and other debris that can quickly fill gutters. Keeping them clear helps rainwater move away from your home and reduces the chance of overflow during Florida's rainy season.
+                                Homes across Palm Coast face year round moisture, coastal humidity, and tree debris that can affect the way rainwater leaves the roof. Without routine maintenance, small blockages may cause overflow and leave excess water around areas that should stay dry.
                             </p>
                             <p class="about-p">
-                                Our friendly crew understands these local conditions and takes the time to clean your gutter system carefully. Our knowledgeable staff explains what they find, answers your questions, and lets you know if they notice any visible drainage problems before the job is finished. We believe homeowners should understand the condition of their gutters and downspouts, so you know exactly what was found during the service.
+                                We understand the conditions that affect homes throughout the city and tailor every visit to those challenges. Each service begins with a careful inspection of the roofline and rainwater system to identify visible concerns before work starts. If we notice anything that deserves your attention, we explain it in clear language so you understand the condition of your home.
+                            </p>
+                            <p class="about-p">
+                                Whether your property is close to Washington Oaks Gardens State Park or along Belle Terre Parkway, regular maintenance helps support reliable drainage throughout the year. Our goal is simple: provide dependable Palm Coast gutter cleaning services that help homeowners protect their property with practical maintenance rather than temporary fixes.
                             </p>
                         </div>
                     </div>
                     
                     <div class="about-graphic-side reveal-el fade-left">
                         <div class="about-image-wrapper">
-                            <img src="images/about_gutter_showcase.png" alt="Showcase of clean roof gutter installation" class="about-img">
+                            <img src="images/about_gutter_showcase.png" alt="Showcase of clean roof gutter installation" class="about-img" loading="lazy" decoding="async">
                             <div class="about-img-backdrop"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- 3. Services Section -->
         <section class="services-section section-padding" id="services">
             <div class="container">
                 <div class="section-title-wrap text-center reveal-el fade-up">
-                    <!-- <span class="section-badge">Our Services</span> -->
                     <h2 class="section-title">Our <span>Services</span></h2>
-                    <p class="text-muted">Professional gutter maintenance and protection systems built to keep your home safe from heavy Florida storms.</p>
+                    <p class="text-muted">Professional Gutter Care for Palm Coast Homes</p>
+                    <p class="text-muted" style="margin-top: 1rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                        Every home has different drainage needs based on its roof design, surrounding trees, and exposure to Florida weather. We focus on two essential services that help rainwater move away from your home and reduce the chance of overflow throughout the year.
+                    </p>
                 </div>
                 <div class="services-grid-layout">
                     <!-- Service 1: Gutter Cleaning -->
@@ -185,7 +275,8 @@
                         </div>
                         <div class="services-card-content">
                             <h3>Gutter Cleaning</h3>
-                            <p>Leaves, pine needles, and other debris can stop rainwater from flowing through your gutters. Our gutter cleaning service removes the buildup, clears blockages, flushes the downspouts, and helps keep water moving away from your home with a thorough cleaning.</p>
+                            <p>Leaves, roof grit, small branches, and other outdoor debris can build up over time and restrict water flow. Our gutter cleaning service removes accumulated debris, clears visible blockages, and flushes the system to confirm water moves through each section properly. If we notice signs of wear or a drainage concern during the visit, we'll explain what we found before the work is complete.</p>
+                            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">Regular maintenance is especially helpful after strong storms and during seasons when nearby trees shed more material onto the roof.</p>
                         </div>
                     </div>
                     <!-- Service 2: Gutter Guard Installation -->
@@ -195,7 +286,8 @@
                         </div>
                         <div class="services-card-content">
                             <h3>Gutter Guard Installation</h3>
-                            <p>Gutter guard installation helps reduce the amount of leaves and debris entering your gutter system. It can make regular gutter cleaning easier and help keep your gutters cleaner between maintenance visits.</p>
+                            <p>Open channels allow debris to collect between maintenance visits. Gutter guard installation creates a protective barrier that helps reduce the amount of material entering the system while allowing rainwater to pass through more efficiently. Many homeowners choose this option to reduce future buildup and make routine maintenance easier.</p>
+                            <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">We help you decide whether a guard system is suitable for your home based on the surrounding trees, roof layout, and existing drainage conditions.</p>
                         </div>
                     </div>
                 </div>
@@ -203,15 +295,179 @@
         </section>
 
 
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-section section-padding" id="why-choose-us">
+            <div class="container">
+                <div class="section-title-wrap text-center reveal-el fade-up">
+                    <h2 class="section-title">Why <span>Choose Us</span></h2>
+                </div>
+                
+                <div class="why-choose-grid">
+                    <!-- Feature 1: Respect for Your Home -->
+                    <div class="why-choose-card reveal-el fade-up" style="transition-delay: 0.05s;">
+                        <div class="why-choose-card-number">01</div>
+                        <div class="why-choose-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Respect for Your Home</h3>
+                        <p>We treat your property with care while we work. From the time we arrive until the job is finished, we work carefully and leave the area clean before we leave.</p>
+                    </div>
+                    
+                    <!-- Feature 2: Clear Communication -->
+                    <div class="why-choose-card reveal-el fade-up" style="transition-delay: 0.1s;">
+                        <div class="why-choose-card-number">02</div>
+                        <div class="why-choose-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3>Clear Communication</h3>
+                        <p>Our knowledgeable staff takes time to answer your questions, explain what they find, and keep communication simple throughout the job, so you always know the condition of your gutter system.</p>
+                    </div>
+                    
+                    <!-- Feature 3: Careful Work From Start to Finish -->
+                    <div class="why-choose-card reveal-el fade-up" style="transition-delay: 0.15s;">
+                        <div class="why-choose-card-number">03</div>
+                        <div class="why-choose-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 11l3 3L22 4"></path>
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                            </svg>
+                        </div>
+                        <h3>Careful Work From Start to Finish</h3>
+                        <p>Every gutter system is different. We remove built up debris, check that rainwater is flowing properly, and complete quality work throughout the service.</p>
+                    </div>
+ 
+                    <!-- Feature 4: Honest Recommendations -->
+                    <div class="why-choose-card reveal-el fade-up" style="transition-delay: 0.2s;">
+                        <div class="why-choose-card-number">04</div>
+                        <div class="why-choose-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <path d="M9 11l2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3>Honest Recommendations</h3>
+                        <p>If we notice something that needs your attention, we'll explain it in simple language. We believe in honest work, so you can decide what is best for your home without pressure.</p>
+                    </div>
+ 
+                    <div class="why-choose-card reveal-el fade-up" style="transition-delay: 0.25s;">
+                        <div class="why-choose-card-number">05</div>
+                        <div class="why-choose-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 6h18"></path>
+                                <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                                <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                            </svg>
+                        </div>
+                        <h3>We Leave Your Property Clean</h3>
+                        <p>After the work is finished, we remove the debris, complete the cleanup, and leave your property clean before we go.</p>
+                    </div>
 
+                    <!-- Feature 6: Focused on Long Term Gutter Care -->
+                    <div class="why-choose-card reveal-el fade-up" style="transition-delay: 0.3s;">
+                        <div class="why-choose-card-number">06</div>
+                        <div class="why-choose-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Focused on Long Term Gutter Care</h3>
+                        <p>Regular gutter cleaning helps reduce blockages caused by leaves, pine needles, and other debris. Keeping your gutter system clear helps rainwater move away from your home throughout the year.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- 6. Before & After Section (Comparison Slider) -->
+        <!-- DIY vs Professional Section -->
+        <section class="comparison-section section-padding" id="comparison-diy">
+            <div class="container">
+                <div class="section-title-wrap text-center reveal-el fade-up">
+                    <h2 class="section-title">DIY vs <span>Professional</span></h2>
+                    <p class="text-muted">While many homeowners consider doing the work themselves, the right choice often depends on safety, time, and the condition of the home's rainwater system.</p>
+                </div>
+                
+                <div class="comparison-layout reveal-el scale">
+                    <!-- DIY Card -->
+                    <div class="comparison-card diy-card">
+                        <div class="comparison-card-header">
+                            <h3>Do It Yourself</h3>
+                        </div>
+                        <ul class="comparison-list">
+                            <li>
+                                <span class="comp-icon icon-cross">✘</span>
+                                <span class="comp-text">Set aside part of your weekend for the job.</span>
+                            </li>
+                            <li>
+                                <span class="comp-icon icon-cross">✘</span>
+                                <span class="comp-text">Move a ladder around the property to reach each section safely.</span>
+                            </li>
+                            <li>
+                                <span class="comp-icon icon-cross">✘</span>
+                                <span class="comp-text">Remove leaves, twigs, roof grit, and other outdoor debris by hand.</span>
+                            </li>
+                            <li>
+                                <span class="comp-icon icon-cross">✘</span>
+                                <span class="comp-text">It can be difficult to tell if every section is working correctly after heavy rain.</span>
+                            </li>
+                            <li>
+                                <span class="comp-icon icon-cross">✘</span>
+                                <span class="comp-text">Collect and dispose of debris after the work is complete.</span>
+                            </li>
+                            <li>
+                                <span class="comp-icon icon-cross">✘</span>
+                                <span class="comp-text">Missed buildup may cause another blockage after the next storm.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Professional Card -->
+                    <div class="comparison-card pro-card">
+                        <div class="comparison-card-header">
+                            <span class="pro-badge">Recommended</span>
+                            <h3>Professional Service</h3>
+                        </div>
+                        <ul class="comparison-list">
+                            <li>
+                                <span class="comp-icon icon-check">✔</span>
+                                <span class="comp-text">Spend your time on other priorities while the maintenance is completed for you.</span>
+                            </li>
+                            <li>
+                                <span class="comp-icon icon-check">✔</span>
+                                <span class="comp-text">The proper equipment is used to access and inspect accessible areas.</span>
+                            </li>
+                            <li>
+                                <span class="comp-icon icon-check">✔</span>
+                                <span class="comp-text">Built up material is cleared, and the entire drainage route is checked for proper water movement.</span>
+                            </li>
+                            <li>
+                                <span class="comp-icon icon-check">✔</span>
+                                <span class="comp-text">Visible drainage concerns are identified and explained before the visit is finished.</span>
+                            </li>
+                            <li>
+                                <span class="comp-icon icon-check">✔</span>
+                                <span class="comp-text">All removed material is taken from the work area before leaving the property.</span>
+                            </li>
+                            <li>
+                                <span class="comp-icon icon-check">✔</span>
+                                <span class="comp-text">Routine maintenance helps reduce future buildup and supports reliable drainage throughout the year.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Before & After Section (Comparison Slider) -->
         <section class="before-after section-padding" id="comparison">
             <div class="container">
                 <div class="section-title-wrap text-center reveal-el fade-up">
-                    <!-- <span class="section-badge">Before & After</span> -->
-                    <h2 class="section-title">See the <span>Redefinition</span></h2>
-                    <p class="text-muted">Slide the interactive glass divider left and right to inspect the transformation from a heavy blockage to a clean channel.</p>
+                    <h2 class="section-title">See the <span>Difference</span></h2>
+                    <p class="text-muted">Move the slider to compare a blocked drainage channel with a clean one and see how proper maintenance restores normal water flow.</p>
                 </div>
                 
                 <div class="slider-container-wrap reveal-el scale">
@@ -244,161 +500,35 @@
             </div>
         </section>
 
-
-        <!-- Why Choose Us Section -->
-        <section class="why-choose-section section-padding" id="why-choose-us">
+        <!-- 10. Contact/CTA Section (Full-width, Form-free layout) -->
+        <section class="contact-section section-padding" id="contact">
             <div class="container">
-                <div class="section-title-wrap text-center reveal-el fade-up">
-                    <!-- <span class="section-badge">Why Choose Us</span> -->
-                    <h2 class="section-title">Built For Florida's <span>Heavy Rainstorms</span></h2>
-                    <p class="text-muted">Palm Coast homes are surrounded by oak trees, slash pines, and dense coastal humidity. We tailor our work to provide long-lasting protection.</p>
-                </div>
-                
-                <div class="why-choose-grid">
-                    <!-- Feature 1 -->
-                    <div class="why-choose-card reveal-el fade-up" style="transition-delay: 0.05s;">
-                        <div class="why-choose-icon">
-                            <span class="why-choose-checkmark"></span>
+                <div class="contact-glass-card reveal-el scale">
+                    <div class="contact-info-block-full reveal-el fade-up" style="background: linear-gradient(rgba(22, 120, 194, 0.92), rgba(16, 89, 145, 0.96)), url('images/gutter_clean_after.jpg') center/cover no-repeat;">
+                        <h2 class="contact-full-title">Keep Your Home Ready for Florida's Next Storm</h2>
+                        <p class="contact-info-desc-full">
+                            Blocked roof drainage can cause rainwater to overflow when heavy rain arrives. Regular maintenance helps water move away from your home and reduces the chance of moisture collecting where it should not. Whether it has been months since your last service or you have noticed visible overflow, now is a good time to have your system inspected.
+                        </p>
+                        <div class="contact-action-box">
+                            <h3>Request Your Free Inspection</h3>
+                            <p style="margin-bottom: 1.5rem; font-size: 0.95rem; color: rgba(255, 255, 255, 0.85); max-width: 600px;">
+                                Have questions about your home or need an estimate? We're here to help. Contact us today to schedule a convenient inspection and learn more about our gutter cleaning service or gutter guard installation.
+                            </p>
+                            <div class="contact-action-buttons">
+                                <a href="tel:(480)-856-4639" class="btn btn-primary">Call Today</a>
+                                <a href="mailto:info@palmcoastguttercleaning.com" class="btn btn-outline-white">Request Your Free Estimate</a>
+                            </div>
                         </div>
-                        <h3>Respect for Your Home</h3>
-                        <p>We treat your property with care while we work. From the time we arrive until the job is finished, we work carefully and leave the area clean before we leave.</p>
-                    </div>
-                    
-                    <!-- Feature 2 -->
-                    <div class="why-choose-card reveal-el fade-up" style="transition-delay: 0.1s;">
-                        <div class="why-choose-icon">
-                            <span class="why-choose-checkmark"></span>
-                        </div>
-                        <h3>Clear Communication</h3>
-                        <p>Our knowledgeable staff takes time to answer your questions, explain what they find, and keep communication simple throughout the job, so you always know the condition of your gutter system.</p>
-                    </div>
-                    
-                    <!-- Feature 3 -->
-                    <div class="why-choose-card reveal-el fade-up" style="transition-delay: 0.15s;">
-                        <div class="why-choose-icon">
-                            <span class="why-choose-checkmark"></span>
-                        </div>
-                        <h3>Careful Work From Start to Finish</h3>
-                        <p>Every gutter system is different. We remove built up debris, check that rainwater is flowing properly, and complete quality work throughout the service.</p>
-                    </div>
-
-                    <!-- Feature 4 -->
-                    <div class="why-choose-card reveal-el fade-up" style="transition-delay: 0.2s;">
-                        <div class="why-choose-icon">
-                            <span class="why-choose-checkmark"></span>
-                        </div>
-                        <h3>Honest Recommendations</h3>
-                        <p>If we notice something that needs your attention, we'll explain it in simple language. We believe in honest work, so you can decide what is best for your home without pressure.</p>
-                    </div>
-
-                    <!-- Feature 5 -->
-                    <div class="why-choose-card reveal-el fade-up" style="transition-delay: 0.25s;">
-                        <div class="why-choose-icon">
-                            <span class="why-choose-checkmark"></span>
-                        </div>
-                        <h3>We Leave Your Property Clean</h3>
-                        <p>After the work is finished, we remove the debris, complete the cleanup, and leave your property clean before we go.</p>
-                    </div>
-
-                    <!-- Feature 6 -->
-                    <div class="why-choose-card reveal-el fade-up" style="transition-delay: 0.3s;">
-                        <div class="why-choose-icon">
-                            <span class="why-choose-checkmark"></span>
-                        </div>
-                        <h3>Focused on Long Term Gutter Care</h3>
-                        <p>Regular gutter cleaning helps reduce blockages caused by leaves, pine needles, and other debris. Keeping your gutter system clear helps rainwater move away from your home throughout the year.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- DIY vs Professional Section -->
-        <section class="comparison-section section-padding" id="comparison-diy">
+        <!-- Before Footer: FAQ Section -->
+        <section class="faqs-section section-padding" id="faq" style="background-color: var(--background-dark); border-top: 1px solid var(--border-dark); border-bottom: 1px solid var(--border-dark);">
             <div class="container">
                 <div class="section-title-wrap text-center reveal-el fade-up">
-                    <span class="section-badge">Comparison</span>
-                    <h2 class="section-title">DIY vs <span>Professional Cleaning</span></h2>
-                    <p class="text-muted">The practical difference between cleaning gutters yourself and having our professional crew handle the job.</p>
-                </div>
-                
-                <div class="comparison-layout reveal-el scale">
-                    <!-- DIY Card -->
-                    <div class="comparison-card diy-card">
-                        <div class="comparison-card-header">
-                            <h3>Do It Yourself</h3>
-                        </div>
-                        <ul class="comparison-list">
-                            <li>
-                                <span class="comp-icon icon-cross">✘</span>
-                                <span class="comp-text">Spend part of your weekend cleaning gutters.</span>
-                            </li>
-                            <li>
-                                <span class="comp-icon icon-cross">✘</span>
-                                <span class="comp-text">Set up a ladder, carry tools, and move around your home to reach every section of the gutter.</span>
-                            </li>
-                            <li>
-                                <span class="comp-icon icon-cross">✘</span>
-                                <span class="comp-text">Remove wet leaves, pine needles, and other debris by hand.</span>
-                            </li>
-                            <li>
-                                <span class="comp-icon icon-cross">✘</span>
-                                <span class="comp-text">It can be difficult to tell if water is draining properly.</span>
-                            </li>
-                            <li>
-                                <span class="comp-icon icon-cross">✘</span>
-                                <span class="comp-text">Spend extra time cleaning up the debris after the work is finished.</span>
-                            </li>
-                            <li>
-                                <span class="comp-icon icon-cross">✘</span>
-                                <span class="comp-text">Missed debris can lead to another cleanup after the next heavy rain.</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Professional Card -->
-                    <div class="comparison-card pro-card">
-                        <div class="comparison-card-header">
-                            <span class="pro-badge">Recommended</span>
-                            <h3>Our Professional Gutter Cleaning</h3>
-                        </div>
-                        <ul class="comparison-list">
-                            <li>
-                                <span class="comp-icon icon-check">✔</span>
-                                <span class="comp-text">Use your time for other things while we take care of the job.</span>
-                            </li>
-                            <li>
-                                <span class="comp-icon icon-check">✔</span>
-                                <span class="comp-text">We bring the equipment needed and complete the job from start to finish.</span>
-                            </li>
-                            <li>
-                                <span class="comp-icon icon-check">✔</span>
-                                <span class="comp-text">We remove the buildup, flush the gutters and downspouts, and help keep rainwater flowing properly.</span>
-                            </li>
-                            <li>
-                                <span class="comp-icon icon-check">✔</span>
-                                <span class="comp-text">We check the gutter system and let you know if we notice any visible drainage problems.</span>
-                            </li>
-                            <li>
-                                <span class="comp-icon icon-check">✔</span>
-                                <span class="comp-text">We complete the cleanup before the job is finished.</span>
-                            </li>
-                            <li>
-                                <span class="comp-icon icon-check">✔</span>
-                                <span class="comp-text">Your gutter system is cleaned and ready for Florida's rainy season.</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 9. FAQ Section -->
-        <section class="faqs-section section-padding" id="faq">
-            <div class="container">
-                <div class="section-title-wrap text-center reveal-el fade-up">
-                    <!-- <span class="section-badge">Frequently Asked Questions</span> -->
                     <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
-                    <p class="text-muted">Important details to help you maintain efficient, storm-ready water flow for your Florida home.</p>
                 </div>
                 
                 <div class="faq-accordion-container reveal-el fade-up">
@@ -410,81 +540,58 @@
                         </button>
                         <div class="faq-accordion-content">
                             <div class="faq-accordion-content-inner">
-                                Professional gutter cleaning includes removing leaves, pine needles, and other debris from the gutters, flushing the downspouts, checking that rainwater flows properly, and completing the cleanup before the job is finished.
+                                Professional gutter cleaning includes removing leaves, roof grit, seed pods, and other debris that restrict water flow. The service also includes clearing visible blockages, checking the roof drainage system, and making sure rainwater can move away from your home properly. Before the visit is complete, any visible drainage concerns are explained.
                             </div>
                         </div>
                     </div>
                     <!-- FAQ 2 -->
                     <div class="faq-accordion-item">
                         <button class="faq-accordion-header" aria-expanded="false">
-                            <h3>2. Do gutter cleaners flush downspouts too?</h3>
+                            <h3>2. How much does gutter cleaning cost in Palm Coast?</h3>
                             <span class="faq-arrow-css"></span>
                         </button>
                         <div class="faq-accordion-content">
                             <div class="faq-accordion-content-inner">
-                                Yes. Downspout flushing helps clear blockages so rainwater can move through the gutters and downspouts instead of backing up during heavy Florida rain.
+                                The cost depends on several factors, including the size of your home, roof height, accessibility, and the amount of debris inside the system. Every property is different, so an inspection is the best way to receive an accurate estimate.
                             </div>
                         </div>
                     </div>
                     <!-- FAQ 3 -->
                     <div class="faq-accordion-item">
                         <button class="faq-accordion-header" aria-expanded="false">
-                            <h3>3. Are gutter guards worth it?</h3>
+                            <h3>3. How often should gutters be cleaned in Palm Coast?</h3>
                             <span class="faq-arrow-css"></span>
                         </button>
                         <div class="faq-accordion-content">
                             <div class="faq-accordion-content-inner">
-                                Gutter guard installation helps reduce the amount of leaves and debris entering your gutters. While gutter guards can reduce maintenance, regular gutter cleaning is still recommended.
+                                Most Palm Coast homes benefit from maintenance at least twice a year. Homes surrounded by mature trees or exposed to frequent storms may require more frequent service because debris can build up faster throughout the year.
                             </div>
                         </div>
                     </div>
                     <!-- FAQ 4 -->
                     <div class="faq-accordion-item">
                         <button class="faq-accordion-header" aria-expanded="false">
-                            <h3>4. Does pine needle buildup require more frequent cleaning in Palm Coast?</h3>
+                            <h3>4. Are gutter guards worth it?</h3>
                             <span class="faq-arrow-css"></span>
                         </button>
                         <div class="faq-accordion-content">
                             <div class="faq-accordion-content-inner">
-                                Yes. Pine needles can collect quickly inside gutters and create blockages that slow water flow. Homes with nearby pine trees often need gutter cleaning more often to keep rainwater draining properly.
+                                For many homeowners, gutter guards help reduce the amount of leaves and outdoor debris that enter the drainage system. They make routine maintenance easier, but they do not eliminate the need for periodic inspections and cleaning.
                             </div>
                         </div>
                     </div>
                     <!-- FAQ 5 -->
                     <div class="faq-accordion-item">
                         <button class="faq-accordion-header" aria-expanded="false">
-                            <h3>5. How does Florida's rainy season affect gutter maintenance needs?</h3>
+                            <h3>5. How does Florida's rainy season affect gutter maintenance?</h3>
                             <span class="faq-arrow-css"></span>
                         </button>
                         <div class="faq-accordion-content">
                             <div class="faq-accordion-content-inner">
-                                Florida's rainy season can bring heavy rain in a short period. If gutters are blocked with leaves and debris, rainwater may overflow instead of draining away from your home. Regular gutter cleaning helps prepare your gutter system for wet weather.
+                                Heavy rainfall can move large amounts of water through the roof drainage system in a short period. If debris blocks the flow, water may overflow instead of draining away from the home. Routine maintenance before the rainy season helps reduce the chance of drainage problems.
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 10. Contact/CTA Section (Full-width, Form-free layout) -->
-        <section class="contact-section section-padding" id="contact">
-            <div class="container">
-                <div class="contact-glass-card reveal-el scale">
-                    <div class="contact-info-block-full reveal-el fade-up" style="background: linear-gradient(rgba(22, 120, 194, 0.92), rgba(16, 89, 145, 0.96)), url('images/house_cta.png') center/cover no-repeat;">
-                        <!-- <span class="cta-badge">Contact Us</span> -->
-                        <h2 class="contact-full-title">Keep Your Gutters Ready for Florida's Next Heavy Rain</h2>
-                        <p class="contact-info-desc-full">
-                            Leaves, pine needles, and other debris can quickly block gutters and stop rainwater from draining properly. If it has been a while since your last gutter cleaning, now is a good time to get your gutter system ready for the next storm.
-                        </p>
-                        <div class="contact-action-box">
-                            <h3>Need Help With Your Gutters?</h3>
-                            <p>Let's get your gutter system flowing properly again.</p>
-                            <div class="contact-action-buttons">
-                                <a href="tel:(480)-856-4639" class="btn btn-primary">Call Now</a>
-                                <a href="mailto:info@palmcoastguttercleaning.com" class="btn btn-outline-white">Get Free Inspection</a>
-                            </div>
-                        </div>
-                    </div>
+                     </div>
                 </div>
             </div>
         </section>
@@ -496,10 +603,10 @@
             <div class="footer-grid">
                 <div class="footer-column footer-brand">
                     <a href="#" class="logo">
-                        <img src="images/logo.png" alt="Gutter Cleaning Logo" class="logo-img">
+                        <img src="images/logo.png" alt="Gutter Cleaning Logo" class="logo-img" loading="lazy" decoding="async">
                         GUTTER CLEANING<span class="logo-dot"></span>
                     </a>
-
+                    <p class="footer-desc" style="margin-top: 1rem;">Serving homeowners throughout Palm Coast, FL.</p>
                 </div>
                 
                 <div class="footer-column">
@@ -516,7 +623,6 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="gutter-guard-installation.html">Services</a></li>
-                        
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -533,6 +639,11 @@
                         </p>
                         <p class="nap-email">
                             <span>Email:</span> <a href="mailto:info@palmcoastguttercleaning.com" itemprop="email">info@palmcoastguttercleaning.com</a>
+                        </p>
+                        <p class="nap-hours" style="margin-top: 1rem; font-size: 0.9rem; color: #D1E0D8;">
+                            <span>Business Hours:</span><br>
+                            Monday – Saturday<br>
+                            8:00 AM – 6:00 PM
                         </p>
                     </div>
                 </div>

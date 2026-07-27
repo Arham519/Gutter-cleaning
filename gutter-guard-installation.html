@@ -22,9 +22,25 @@
 
     <!-- Header / Navigation -->
     <header class="main-header" id="mainHeader">
+        <div class="header-info-bar">
+            <div class="container info-bar-container">
+                <div class="info-item phone-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <span>Call Us: <a href="tel:(480)-856-4639">(480)-856-4639</a></span>
+                </div>
+                <div class="info-item email-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <span>Email: <a href="mailto:info@palmcoastguttercleaning.com">info@palmcoastguttercleaning.com</a></span>
+                </div>
+                <div class="info-item hours-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    <span>Hours: Mon - Sat 8am - 6pm</span>
+                </div>
+            </div>
+        </div>
         <div class="container nav-bar">
             <a href="index.html" class="logo" aria-label="Gutter Cleaning Home">
-                <img src="images/logo.png" alt="Gutter Cleaning Logo" class="logo-img">
+                <img src="images/logo.png" alt="Gutter Cleaning Logo" class="logo-img" decoding="async">
             </a>
             
             <button class="hamburger-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
@@ -35,12 +51,12 @@
 
             <nav>
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="nav-dropdown-wrapper">
-                        <a href="index.html#services" class="nav-link active">Services <span class="nav-dropdown-arrow">▼</span></a>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-dropdown-wrapper active">
+                        <a href="#" class="nav-link active">Services <span class="nav-dropdown-arrow">▼</span></a>
                         <ul class="nav-dropdown-menu">
-                            <li><a href="gutter-guard-installation.html">Gutter Guard Installation</a></li>
+                            <li><a href="gutter-guard-installation.html" class="active">Gutter Guard Installation</a></li>
                         </ul>
                     </li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -79,7 +95,7 @@
                     
                     <div class="about-graphic-side reveal-el fade-left">
                         <div class="about-image-wrapper">
-                            <img src="images/gutter_guard_showcase.png" alt="Installed micro-mesh gutter guard protection screen" class="about-img">
+                            <img src="images/gutter_guard_showcase.png" alt="Installed micro-mesh gutter guard protection screen" class="about-img" loading="lazy" decoding="async">
                             <div class="about-img-backdrop"></div>
                         </div>
                     </div>
@@ -201,7 +217,7 @@
         <section class="contact-section section-padding" id="contact">
             <div class="container">
                 <div class="contact-glass-card reveal-el scale">
-                    <div class="contact-info-block-full reveal-el fade-up" style="background: linear-gradient(rgba(15, 108, 189, 0.92), rgba(11, 79, 140, 0.96)), url('images/house_cta.png') center/cover no-repeat;">
+                    <div class="contact-info-block-full reveal-el fade-up" style="background: linear-gradient(rgba(15, 108, 189, 0.92), rgba(11, 79, 140, 0.96)), url('images/gutter_clean_after.jpg') center/cover no-repeat;">
                         <!-- <span class="cta-badge">Free Quote</span> -->
                         <h2 class="contact-full-title">Ready to Protect Your Palm Coast Home?</h2>
                         <p class="contact-info-desc-full">
@@ -218,6 +234,76 @@
                     </div>
                 </div>
             </div>
+        <!-- Before Footer: FAQ Section -->
+        <section class="faqs-section section-padding" id="faq" style="background-color: var(--background-dark); border-top: 1px solid var(--border-dark); border-bottom: 1px solid var(--border-dark);">
+            <div class="container">
+                <div class="section-title-wrap text-center reveal-el fade-up">
+                    <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+                </div>
+                
+                <div class="faq-accordion-container reveal-el fade-up">
+                    <!-- FAQ 1 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-accordion-header" aria-expanded="false">
+                            <h3>1. What does professional gutter cleaning include?</h3>
+                            <span class="faq-arrow-css"></span>
+                        </button>
+                        <div class="faq-accordion-content">
+                            <div class="faq-accordion-content-inner">
+                                Professional gutter cleaning includes removing leaves, roof grit, seed pods, and other debris that restrict water flow. The service also includes clearing visible blockages, checking the roof drainage system, and making sure rainwater can move away from your home properly. Before the visit is complete, any visible drainage concerns are explained.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-accordion-header" aria-expanded="false">
+                            <h3>2. How much does gutter cleaning cost in Palm Coast?</h3>
+                            <span class="faq-arrow-css"></span>
+                        </button>
+                        <div class="faq-accordion-content">
+                            <div class="faq-accordion-content-inner">
+                                The cost depends on several factors, including the size of your home, roof height, accessibility, and the amount of debris inside the system. Every property is different, so an inspection is the best way to receive an accurate estimate.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 3 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-accordion-header" aria-expanded="false">
+                            <h3>3. How often should gutters be cleaned in Palm Coast?</h3>
+                            <span class="faq-arrow-css"></span>
+                        </button>
+                        <div class="faq-accordion-content">
+                            <div class="faq-accordion-content-inner">
+                                Most Palm Coast homes benefit from maintenance at least twice a year. Homes surrounded by mature trees or exposed to frequent storms may require more frequent service because debris can build up faster throughout the year.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 4 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-accordion-header" aria-expanded="false">
+                            <h3>4. Are gutter guards worth it?</h3>
+                            <span class="faq-arrow-css"></span>
+                        </button>
+                        <div class="faq-accordion-content">
+                            <div class="faq-accordion-content-inner">
+                                For many homeowners, gutter guards help reduce the amount of leaves and outdoor debris that enter the drainage system. They make routine maintenance easier, but they do not eliminate the need for periodic inspections and cleaning.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 5 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-accordion-header" aria-expanded="false">
+                            <h3>5. How does Florida's rainy season affect gutter maintenance?</h3>
+                            <span class="faq-arrow-css"></span>
+                        </button>
+                        <div class="faq-accordion-content">
+                            <div class="faq-accordion-content-inner">
+                                Heavy rainfall can move large amounts of water through the roof drainage system in a short period. If debris blocks the flow, water may overflow instead of draining away from the home. Routine maintenance before the rainy season helps reduce the chance of drainage problems.
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -227,7 +313,7 @@
             <div class="footer-grid">
                 <div class="footer-column footer-brand">
                     <a href="index.html" class="logo">
-                        <img src="images/logo.png" alt="Gutter Cleaning Logo" class="logo-img">
+                        <img src="images/logo.png" alt="Gutter Cleaning Logo" class="logo-img" loading="lazy" decoding="async">
                         GUTTER CLEANING<span class="logo-dot"></span>
                     </a>
 
