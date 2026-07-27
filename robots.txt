@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://palmcoastguttercleaning.com/sitemap.xml
+Sitemap: https://gutter-cleaning-six.vercel.app/sitemap.xml
