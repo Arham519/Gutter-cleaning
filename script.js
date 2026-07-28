@@ -1,5 +1,5 @@
 /**
- * Gutter Cleaning Palm Coast - Premium Custom JS Implementation
+ * AquaShield Gutters - Premium Custom JS Implementation
  * Vanilla ES6 JavaScript
  */
 
